@@ -33,18 +33,6 @@ client.on("ready", async () => {
 
 client.on("message", async (msg) => {
 
-
-    //Créditos
-    /*if (!msg.author.bot) {
-        if (!msg.guild) return;
-        if (!msg.author.bot) {
-            console.log(`${msg.author.username}: ${msg.content}`);
-            const args = msg.content.split(" ");
-            if (commands[args[0]]) commands[args[0]](client, msg);
-        }
-    }*/
-
-
     // Conversa com o bot
     if (msg.content == "oi <@!738054571074781246>" || msg.content == "Oi <@!738054571074781246>" || msg.content == "olá <@!738054571074781246>" || msg.content == "Olá <@!738054571074781246>") {
         msg.reply('Olá! Tudo bem?')
