@@ -1,12 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const { msgEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
+
 const mongoose = require('mongoose');
 require('dotenv').config();
 const fs = require("fs");
+
 const prefix = process.env.PREFIX;
+
 const { Client, Collection } = require('discord.js');
 const { loadCommands, loadEvents } = require('./utils');
+
+
 
 client.commands = new Collection();
 client.startTime = Date.now();
@@ -46,11 +51,9 @@ client.on("message", async (msg) => {
         setTimeout(function () { msg.channel.send('Ei, qualquer coisa me chama, é só usar ";-;help"') }, 2200);
     }
 
-    
 
 
 
-    
     //DM
     const hello = 'oi' || 'oii' || 'ola' || 'olá' || 'Oi' || 'Oii' || 'Ola' || 'Olá';
     const yes = 'sim' || 'simm' || 'siimm' || 'Sim' || 'Simm' || 'ss' || 's' || 'claro' || 'Claro';
@@ -60,19 +63,26 @@ client.on("message", async (msg) => {
     }
     if (msg.content === yes && msg.channel.type === 'dm') {
         msg.author.send('Eu sei algo que vai te ajudar. Pera aí!');
-        const embed = new msgEmbed()
+        const embed = new MessageEmbed()
             .setTitle('Comandos disponíveis')
             .setDescription(`
-        **${prefix}avatar <@usuário> -** Mostra o avatar de alguém que você mensionar;
-        **${prefix}dramaqueen -** !!EM BREVE!!;
-        **${prefix}enigma: -** ... . / ...- .. .-. .-;
-        **${prefix}help -** Mostra todos os comandos do bot;
-        **${prefix}inspiration -** Mostra uma frase para inspirar a sua vida, ou nem tanto. (Inglês);
-        **${prefix}ping: -** Mostra a taxa de latência do bot;
-        **${prefix}timer -** Coloque o comando, o tempo e se é hour, min ou sec, assim que o timer acabar o bot te avisa;
-
-        **Reddit:**
-        **${prefix}meme -** memes do subreddit r/memes (Inglês);
+            **__Informações:__**     
+            **${prefix}help -** Mostra todos os comandos do bot;
+            **${prefix}ping -** Mostra a taxa de latência do bot;
+          ━━━━━━━━━━━━━━━━━━━━━━━
+            **__Geral:__**
+            **${prefix}avatar <@usuário> -** Mostra o avatar de alguém que você mensionar;
+            **${prefix}enigma  -** ... . / ...- .. .-. .-;
+            **${prefix}inspiration -** Mostra uma frase para inspirar a sua vida, ou nem tanto. (Inglês);
+            **${prefix}msg -** Mensione alguém e logo em seguida coloque uma mensagem para o bot enviar a pessoa. É recomendado o uso de uma identificação;
+            **${prefix}timer  -** Coloque o comando, o tempo e se é hour, min ou sec, assim que o timer acabar o bot te avisa;
+          ━━━━━━━━━━━━━━━━━━━━━━━
+            **__Música:__**
+            **${prefix}play  -** coloque o nome do vídeo que você quer ver e se divirta;
+            **${prefix}leave  -** o bot sai do canal de voz;
+          ━━━━━━━━━━━━━━━━━━━━━━━
+            **__Fun:__**
+            **${prefix}meme  -** memes do subreddit r/memes (Inglês);
         `)
             .setFooter('BotSAD', 'https://i.imgur.com/L5rZGBN.png')
             .setColor('#fad73a');

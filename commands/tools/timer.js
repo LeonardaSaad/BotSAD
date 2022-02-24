@@ -12,7 +12,7 @@ module.exports = {
         
         switch (true) {
             case !tempo && !horas && !minutos && !segundos :
-                msg.reply(' depois do comando, coloque o tempo e a medida de tempo que você quer no timer!');
+                msg.reply(' depois do comando, coloque o tempo e a medida de tempo que você quer no timer! Ex: ;-;timer 20 sec');
                 break;
             case horas == 'hour' : 
                 msg.reply(' daqui a pouco eu te aviso!');

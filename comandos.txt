@@ -1,0 +1,26 @@
+commands:
+- meme
+- robdolox
+- help
+- ping
+- leave
+- play
+- enigma
+- inspiration
+- avatar
+- msg
+- timer
+
+
+Terminar:
+- memebr (achar um reddit/nao existe reddit bom)
+- niver
+- drama
+- skip
+- stop
+
+
+
+
+
+Ideias:

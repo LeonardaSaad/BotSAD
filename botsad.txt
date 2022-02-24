@@ -1,0 +1,2 @@
+Bot para a rede social Discord, programado em JavaScript, além da utilização do Note.Js. Em anexo está o link para o repositório, contendo mais informações.
+GitHub: https://github.com/LeonardaSaad/BotSAD

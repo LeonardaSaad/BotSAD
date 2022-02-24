@@ -1,0 +1,6 @@
+mongodb+srv://Saad:LsS7573YuPsTy!@cluster0.oiuws.mongodb.net/BotSAD?retryWrites=true&w=majority
+
+NzM4MDU0NTcxMDc0NzgxMjQ2.XyGU4g.pCAh2DZ0BmW2OBd9GF9iwNPahHg
+
+
+
